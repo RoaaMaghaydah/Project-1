@@ -2,27 +2,71 @@ body{
     background-image: url('https://cdn.technologynetworks.com/tn/images/thumbs/webp/640_360/bursts-of-radio-waves-tracked-to-neighboring-galaxy-328999.webp?v=10528766');
 
     background-size:cover;
-     display:flex;
-     justify-content: center;
-     flex-wrap: wrap;
-     margin-top: 150px
+    
+    height:500px;
+    width: 1000px;
+    }
 
-    ;}
-    .cloud {
-        
-       
-      width:400px;
-      height:300px;
+    #button{
+      margin-left: 500px;
+      margin-bottom:250px;
+      background-color: tomato;
+      cursor: pointer;
+     
+    }
+
+   .cloud { 
+      width:700px;
+      height:500px;
       border-radius: 0 0 100px 100px;
+      background:
+      /*                radius                            position  / 2xradius*/
+      radial-gradient(140px 120px,rgb(255, 255, 255) 98%,transparent 100%) 20% 30%  /280px    240px,
+      radial-gradient(200px 180px,rgb(255, 255, 255) 98%,transparent 100%) 50% 50%  /400px   360px,
+      radial-gradient(200px     ,rgb(255, 255, 255) 98%,transparent 100%) 100% 100%/400px   400px,
+      radial-gradient(160px     ,rgb(255, 255, 255) 98%,transparent 100%) 0 100%   /320px    320px,
+      /* base of the cloud */
+      linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 160px;;
+      background-repeat:no-repeat;
+       
+    }
+    .cloud_1{
+      margin: 70px;
+      width:200px;
+      height:150px;
+      border-radius: 0 0 50px 50px;
   
       background:
       /*                radius                            position  / 2xradius*/
-      radial-gradient(70px 60px,rgb(255, 255, 255) 98%,transparent 100%) 20% 30%  /140px    120px,
-      radial-gradient(100px 90px,rgb(255, 255, 255) 98%,transparent 100%) 50% 50%  /200px   180px,
-      radial-gradient(100px     ,rgb(255, 255, 255) 98%,transparent 100%) 100% 100%/200px   200px,
-      radial-gradient(80px     ,rgb(255, 255, 255) 98%,transparent 100%) 0 100%   /160px    160px,
+      radial-gradient(35px 30px,rgb(255, 255, 255) 98%,transparent 100%) 20% 30%  /70px    60px,
+      radial-gradient(50px 45px,rgb(255, 255, 255) 98%,transparent 100%) 50% 50%  /100px   90px,
+      radial-gradient(50px     ,rgb(255, 255, 255) 98%,transparent 100%) 100% 100%/100px   100px,
+      radial-gradient(40px     ,rgb(255, 255, 255) 98%,transparent 100%) 0 100%   /80px    80px,
       /* base of the cloud */
-      linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 80px;;
+      linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 40px;;
       background-repeat:no-repeat;
-      
     }
+
+    .cloud_parant{
+      display:grid;
+      grid-template-columns: 500px 400px;
+      gap: 200px;
+      align-content:start;
+     margin-top:20px;
+    }
+
+    .cloud_child_1{
+      margin-top:20px;
+      display:grid;
+      grid-template-columns: 200px 200px;
+      gap:100px;
+      align-items: start;
+    }
+
+  .test{
+   position: relative;
+   left: 100px;
+   bottom: 450px;
+   font-size: 100px;
+   color:red;
+ }
