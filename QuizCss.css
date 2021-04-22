@@ -1,0 +1,62 @@
+body{
+    background-image: url('https://cdn.technologynetworks.com/tn/images/thumbs/webp/640_360/bursts-of-radio-waves-tracked-to-neighboring-galaxy-328999.webp?v=10528766');
+
+    background-size:cover;
+   
+
+    ;}
+
+    .perant{
+     display: grid;
+     justify-content: center;
+     gap:60px;
+     align-items: end;}
+
+     .c1{
+         margin-top: 100px;
+         
+     }
+  .c1a{
+      margin:20px;
+      font-style: italic;
+      font-size: 70px;
+  }
+    
+  .c1b{
+    margin:20px;
+    font-style: italic;
+    font-size: 45px;
+}
+.c2{
+    margin:30px;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.c2:hover{
+    background-color:rgb(102, 128, 92) ;
+    
+}
+    .cloud {
+        
+       
+        width:200px;
+        height:150px;
+        border-radius: 0 0 50px 50px;
+    
+        background:
+        /*                radius                            position  / 2xradius*/
+        radial-gradient(35px 30px,rgb(255, 255, 255) 98%,transparent 100%) 20% 30%  /70px    60px,
+        radial-gradient(50px 45px,rgb(255, 255, 255) 98%,transparent 100%) 50% 50%  /100px   90px,
+        radial-gradient(50px     ,rgb(255, 255, 255) 98%,transparent 100%) 100% 100%/100px   100px,
+        radial-gradient(40px     ,rgb(255, 255, 255) 98%,transparent 100%) 0 100%   /80px    80px,
+        /* base of the cloud */
+        linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 40px;;
+        background-repeat:no-repeat;
+        
+      }
+      
+
