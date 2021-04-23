@@ -124,12 +124,6 @@ body{
       
     }
 
-
-    
-
-
-
-
     .cloud_parant{
       display:grid;
       grid-template-columns: 500px 400px;
@@ -163,4 +157,18 @@ body{
   font-style: italic;
   font-size: 45px;
 
+ }
+
+
+ #page_00{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top:120px;
+  color:white;
+  font-size:100px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-style: italic;
+ 
  }
