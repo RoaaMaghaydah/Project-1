@@ -170,5 +170,18 @@ body{
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-style: italic;
+  border: 3px solid white;
+  margin-left:100px;
+  height: fit-content;
+  width: fit-content;
+  font-size:60px;
  
+ }
+
+ #new_perant{
+  display:grid;
+  grid-template-columns: 500px 400px;
+  gap: 200px;
+  align-content:start;
+   margin-top:20px;
  }

@@ -44,17 +44,35 @@
      else 
      {
         document.getElementById("new_page").innerHTML="";
+        const div_perant=document.createElement("div");
+        div_perant.id="new_perant";
+        body1.append(div_perant);
+        const div_child1=document.createElement("div");
+        div_child1.id="new_child1";
+        div_child1.append(div_perant);
+        const div_child2=document.createElement("div");
+        div_child2.id="new_child2";
+        div_child2.append(div_perant);
         const page=document.createElement("p");
+        const img=document.createElement("img");
         if(score>=2)
         {
-         page.innerHTML="you win your soure :"+score;
+         page.innerHTML="you win your score :"+score;
+         body1.style.background="pink";
+         img.src="https://lh3.googleusercontent.com/proxy/k27InKLvo7jXdnuIT63ojZKLpcdWBM_SPlellOBs1kaeNgr7LE1bv5jccFgF0af_Sfm3XCNU4VUw1u51gcM6e9jvGWGjLPw";
+         
+ 
         }
         else{
-         page.innerHTML="you lost your soure :"+score;
+         page.innerHTML="you lost your score :"+score;
+         body1.style.background="black";
+         img.src="https://www.pngkey.com/png/full/239-2391210_game-over-game-over-pixel-transparent.png";
         }
        
+       
         page.id="page_00";
-       body1.append(page)
+        div_child1.append(page)
+        div_child2.appendChild(img);
      }
     }
 
