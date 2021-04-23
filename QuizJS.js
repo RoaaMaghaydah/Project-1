@@ -49,12 +49,19 @@
         body1.append(div_perant);
         const div_child1=document.createElement("div");
         div_child1.id="new_child1";
-        div_child1.append(div_perant);
+        div_perant.append(div_child1);
         const div_child2=document.createElement("div");
         div_child2.id="new_child2";
-        div_child2.append(div_perant);
+        div_perant.append( div_child2);
+
+        const new_button=document.createElement("button");
+        new_button.innerHTML="Try Again";
+        new_button.id="new_cloud";
+       
+        
         const page=document.createElement("p");
         const img=document.createElement("img");
+
         if(score>=2)
         {
          page.innerHTML="you win your score :"+score;
@@ -71,8 +78,10 @@
        
        
         page.id="page_00";
-        div_child1.append(page)
-        div_child2.appendChild(img);
+        div_child2.append(page)
+        div_child2.append(new_button);
+        div_child1.appendChild(img);
+    
      }
     }
 
