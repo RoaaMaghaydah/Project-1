@@ -26,11 +26,10 @@ body{
       radial-gradient(200px     ,rgb(255, 255, 255) 98%,transparent 100%) 100% 100%/400px   400px,
       radial-gradient(160px     ,rgb(255, 255, 255) 98%,transparent 100%) 0 100%   /320px    320px,
       /* base of the cloud */
-      linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 160px;;
+      linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 180px;;
       background-repeat:no-repeat;
-
-      
-       
+      position: relative;
+      top: 20px;
     }
     
      #cloud_1{
@@ -49,12 +48,14 @@ body{
       linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 40px;;
       background-repeat:no-repeat;
 
-     font-size: 30px;
+     font-size: 40px;
      font-style: italic;
      font-family: 'Times New Roman', Times, serif;
      font-weight: bold;
      cursor: pointer;
-      
+     text-shadow:yellow 2px 2px ;
+     border: none;
+     
     }
     #cloud_2{
       margin: 70px;
@@ -72,12 +73,13 @@ body{
       linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 40px;;
       background-repeat:no-repeat;
 
-     font-size: 30px;
+     font-size: 40px;
      font-style: italic;
      font-family: 'Times New Roman', Times, serif;
      font-weight: bold;
      cursor: pointer;
-      
+     text-shadow:yellow 2px 2px ;
+     border: none;
     }
      
     #cloud_3{
@@ -96,12 +98,13 @@ body{
       linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 40px;;
       background-repeat:no-repeat;
 
-     font-size: 30px;
+     font-size: 40px;
      font-style: italic;
      font-family: 'Times New Roman', Times, serif;
      font-weight: bold;
      cursor: pointer;
-      
+     text-shadow:yellow 2px 2px ;
+     border: none; 
     }
 
     #cloud_4{
@@ -120,12 +123,13 @@ body{
       linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) bottom/100% 40px;;
       background-repeat:no-repeat;
 
-     font-size: 30px;
+     font-size: 40px;
      font-style: italic;
      font-family: 'Times New Roman', Times, serif;
      font-weight: bold;
      cursor: pointer;
-      
+     text-shadow:yellow 2px 2px ;
+     border: none;
     }
 
     .cloud_parant{
@@ -155,13 +159,13 @@ body{
   #quastion_f{
    
   position: relative; 
-  top:200px;
+  top:90px;
   left: 80px;
-  color:rgb(56, 0, 146);
+  color:rgb(0, 0, 0);
 
   font-style: italic;
   font-size: 40px;
-  text-shadow: -1px  0 black,0 1px black, 1px 0 black,0 -1px black;
+  text-shadow: -1px  0 yellow,0 1px yellow, 1px 0 yellow,0 -1px yellow;
 
  }
 
@@ -203,6 +207,7 @@ body{
   left:40px;
   transform: skewY(20deg);
  
+ 
  }
 
  #new_cloud{
@@ -229,4 +234,25 @@ body{
  top:100px;
  left:200px;
  cursor: pointer;
+ text-shadow: yellow 2px 2px;
+ border: none;
+}
+
+#think{
+  position: relative;
+  top:70px;
+  left: 430px;
+}
+
+#Q{
+
+  position: relative; 
+  bottom:50px;
+  left:40px;
+  color:rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 50px;
+  text-shadow:yellow 2px 2px;
+  /*text-shadow: -1px  0 rgb(138, 59, 59),0 1px black, 1px 0 black,0 -1px black;*/
+
 }

@@ -27,20 +27,17 @@ body{
     font-size: 45px;
 }
 .c2{
-    margin:30px;
+    margin:45px;
     font-style: italic;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-weight:bold;
-    text-shadow: turquoise 2px 2px ;
-
+    text-shadow:yellow 2px 2px ;
     cursor: pointer;
-    transition-duration: 0.4s;
-}
-.c2:hover{
-    background-color:rgb(255, 255, 255) ;
+    border: none;
     
 }
+
     .cloud {
         
        

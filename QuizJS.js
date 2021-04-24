@@ -26,20 +26,34 @@
       const option_4=document.querySelector("#cloud_4");
     
   //////////////////////////////////////////////
+    
+      const Q=document.createElement("p");
+      Q.innerHTML="Choose the correct ansswer";
+      Q.id="Q";
+      eee.append(Q);
+
       const quastion_f=document.createElement("p");
       quastion_f.innerHTML=array_quastion[0];
       quastion_f.id="quastion_f";
       eee.append(quastion_f);
+      
       array_quastion.splice(0,1)
-
-
-      const func_quadtion=()=>{
+      const think=document.createElement("img");
+      think.src="https://as2.ftcdn.net/jpg/02/02/91/77/500_F_202917771_veXHcATm4A0UJS3FhioRVlcbyHqPPwHB.jpg";
+      think.style.height="180px"
+      think.style.width="180px";
+      think.id="think";
+      eee.append(think);
+        
+      const func_quadtion=()=>{   
       if(array_quastion.length!==0){
       document.getElementById("cloud").innerHTML="";
       const quastion_f=document.createElement("p");
       quastion_f.innerHTML=array_quastion[0];
       quastion_f.id="quastion_f";
+      eee.append(Q);
       eee.append(quastion_f);
+      eee.append(think);
       array_quastion.splice(0,1)
      }
      else 
@@ -64,16 +78,18 @@
         const page=document.createElement("p");
         const img=document.createElement("img");
 
-        if(score>=2)
+        if(score>=3)
         {
-         page.innerHTML="you win your score :"+score;
+         page.innerHTML="      Your Score :"+score;
+         page.style.textShadow="yellow 2px 2px";
          body1.style.background="black";
          img.src="https://image.freepik.com/free-vector/you-win-neon-text-sign_118419-1005.jpg";
          img.style.height="500px";
          img.style.width="500px"
         }
         else{
-         page.innerHTML="you lost your score :"+score;
+         page.innerHTML="      Your Score :"+score;
+         page.style.textShadow="yellow 2px 2px";
          body1.style.background="black";
          img.src="https://www.pngkey.com/png/full/239-2391210_game-over-game-over-pixel-transparent.png";
         }
@@ -141,7 +157,7 @@
         console.log("wiiin");
         score++;
         console.log("wiiin","score="+score);
-
+        
         alert("correct answer");
         correct_answer.splice(0,1)
         option_a.splice(0,1)
@@ -152,7 +168,7 @@
     }
     else {
         console.log("lost");
-        alert("wrong answer");
+        alert(`wrong answer`);
         correct_answer.splice(0,1)
         option_a.splice(0,1)
         option_b.splice(0,1)
