@@ -65,10 +65,10 @@
         if(score>=2)
         {
          page.innerHTML="you win your score :"+score;
-         body1.style.background="pink";
-         img.src="https://lh3.googleusercontent.com/proxy/k27InKLvo7jXdnuIT63ojZKLpcdWBM_SPlellOBs1kaeNgr7LE1bv5jccFgF0af_Sfm3XCNU4VUw1u51gcM6e9jvGWGjLPw";
-         
- 
+         body1.style.background="black";
+         img.src="https://image.freepik.com/free-vector/you-win-neon-text-sign_118419-1005.jpg";
+         img.style.height="500px";
+         img.style.width="500px"
         }
         else{
          page.innerHTML="you lost your score :"+score;
