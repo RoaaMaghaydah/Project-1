@@ -44,6 +44,7 @@
      else 
      {
         document.getElementById("new_page").innerHTML="";
+
         const div_perant=document.createElement("div");
         div_perant.id="new_perant";
         body1.append(div_perant);
@@ -57,8 +58,8 @@
         const new_button=document.createElement("button");
         new_button.innerHTML="Try Again";
         new_button.id="new_cloud";
-       
-        
+
+    
         const page=document.createElement("p");
         const img=document.createElement("img");
 
@@ -76,10 +77,15 @@
          img.src="https://www.pngkey.com/png/full/239-2391210_game-over-game-over-pixel-transparent.png";
         }
        
+        const link=document.createElement("a");
+        link.href="quizHTML.html";
        
+        
         page.id="page_00";
         div_child2.append(page)
-        div_child2.append(new_button);
+       // div_child2.append(new_button);
+       div_child2.append(link);
+       link.append(new_button)
         div_child1.appendChild(img);
     
      }

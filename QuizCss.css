@@ -29,14 +29,16 @@ body{
 .c2{
     margin:30px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
+    font-weight:bold;
+    text-shadow: turquoise 2px 2px ;
+
     cursor: pointer;
     transition-duration: 0.4s;
 }
 .c2:hover{
-    background-color:rgb(102, 128, 92) ;
+    background-color:rgb(255, 255, 255) ;
     
 }
     .cloud {
