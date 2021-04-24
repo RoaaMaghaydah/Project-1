@@ -141,6 +141,7 @@
         score++;
         console.log("wiiin","score="+score);
 
+        alert("correct answer");
         correct_answer.splice(0,1)
         option_a.splice(0,1)
         option_b.splice(0,1)
@@ -150,6 +151,7 @@
     }
     else {
         console.log("lost");
+        alert("wrong answer");
         correct_answer.splice(0,1)
         option_a.splice(0,1)
         option_b.splice(0,1)
@@ -166,6 +168,7 @@ const correct_B=()=>
         console.log("wiiin");
         score++;
         console.log("wiiin","score="+score);
+        alert("correct answer");
 
         correct_answer.splice(0,1)
         option_a.splice(0,1)
@@ -176,6 +179,8 @@ const correct_B=()=>
     }
     else {
         console.log("lost");
+        alert("wrong answer");
+
         correct_answer.splice(0,1)
         option_a.splice(0,1)
         option_b.splice(0,1)
@@ -191,6 +196,7 @@ const correct_C=()=>
         console.log("wiiin");
         score++;
         console.log("wiiin","score="+score);
+        alert("correct answer");
 
       correct_answer.splice(0,1)
       option_a.splice(0,1)
@@ -200,6 +206,7 @@ const correct_C=()=>
     }
     else {
         console.log("lost");
+        alert("wrong answer");
         correct_answer.splice(0,1)
         option_a.splice(0,1)
         option_b.splice(0,1)
@@ -210,9 +217,10 @@ const correct_C=()=>
  //////////////////////////////////////////////////
 const correct_D=()=>
 {
-    console.log(option_d);
-    if(option_d[0]===correct_answer[0]){
+       console.log(option_d);
+       if(option_d[0]===correct_answer[0]){
         score++;
+        alert("correct answer");
         console.log("wiiin","score="+score);
         correct_answer.splice(0,1)
         option_a.splice(0,1)
@@ -222,6 +230,7 @@ const correct_D=()=>
     }
     else {
         console.log("lost");
+        alert("wrong answer");
         correct_answer.splice(0,1)
         option_a.splice(0,1)
         option_b.splice(0,1)
@@ -273,7 +282,8 @@ const correct_D=()=>
    
         document.getElementById("cloud_1").addEventListener("click" ,function(){
         return option_D();})
-
+   
+    
          
        document.getElementById("cloud_2").addEventListener("click" ,function(){
         return func_quadtion();})
