@@ -63,7 +63,9 @@
       eee.append(hint);
      // hint_list.splice;(i,1);
 
-      
+     //sessionStorage.setItem('test', score);
+     //alert( sessionStorage.getItem('test') );
+    
       const func_quadtion=()=>{   
       if(array_quastion.length!==0){
          /////random////
@@ -110,13 +112,22 @@
          body1.style.background="black";
          img.src="https://image.freepik.com/free-vector/you-win-neon-text-sign_118419-1005.jpg";
          img.style.height="500px";
-         img.style.width="500px"
+         img.style.width="500px";
+        /* localStorage.setItem('score',score);
+         let myScore = localStorage.getItem('score');
+         myScore;
+         alert(myScore)*/
         }
         else{
          page.innerHTML="      Your Score :"+score;
          page.style.textShadow="yellow 2px 2px";
          body1.style.background="black";
          img.src="https://www.pngkey.com/png/full/239-2391210_game-over-game-over-pixel-transparent.png";
+
+      /*   localStorage.setItem('score',score);
+         let myScore = localStorage.getItem('score');
+         myScore;
+         alert(` the last score ${myScore}`)*/
         }
        
         const link=document.createElement("a");
@@ -124,10 +135,9 @@
        
         
         page.id="page_00";
-        div_child2.append(page)
-       // div_child2.append(new_button);
-       div_child2.append(link);
-       link.append(new_button)
+        div_child2.append(page);
+        div_child2.append(link);
+        link.append(new_button)
         div_child1.appendChild(img);
     
      }
@@ -177,10 +187,10 @@
 
    const func_hint=()=>{
 
-    alert(`Hint :: ${hint_list[i]} `)
+    alert(`Hint :: ${hint_list[i]} `) 
    }
 
-
+ //////////////////////////////////////////////////
   const correct_A=()=>
 {
     console.log(option_a);
