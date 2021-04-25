@@ -1,6 +1,6 @@
 body{
     background-image: url('https://cdn.technologynetworks.com/tn/images/thumbs/webp/640_360/bursts-of-radio-waves-tracked-to-neighboring-galaxy-328999.webp?v=10528766');
-
+ /*background-repeat:no-repeat;*/
     background-size:cover;
     
     height:500px;
