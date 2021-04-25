@@ -16,6 +16,8 @@
       let option_b=["30","30","24","7831","44","25","9","81","74","382"];
       let option_c=["18","10","4","3178","18","36","23","25","5","171"];
       let option_d=["4","5","25","8817","40","50","19","47","21","160"];
+      let hint_list=["think about :( *n )","think about :( *n )","think about :( +n )","think about :( ordar )","think about :( - && / )",
+      "think about :( power && + )","think about :( + && * )","think about :( ordar )","think about :( sqr && + )","think about :( - )"];
       let correct_answer=["32","10","25","7831","44","49","23","81","12","160"];
       const arr_len=array_quastion.length;
       let score=0;
@@ -46,6 +48,7 @@
 
       
       array_quastion.splice(i,1)
+          
       const think=document.createElement("img");
       think.src="https://as2.ftcdn.net/jpg/02/02/91/77/500_F_202917771_veXHcATm4A0UJS3FhioRVlcbyHqPPwHB.jpg";
       think.style.height="180px"
@@ -53,12 +56,19 @@
       think.id="think";
       eee.append(think);
       
+
+      const hint=document.createElement("button");
+      hint.innerHTML="Hint";
+      hint.id="hint";
+      eee.append(hint);
+     // hint_list.splice;(i,1);
+
+      
       const func_quadtion=()=>{   
       if(array_quastion.length!==0){
-////////////random///////////////////
+         /////random////
        i=Math.floor(Math.random() *array_quastion.length) 
-      console.log("i",i ,"lenght",array_quastion.length)
-/////////////////////////////////////
+       console.log("i",i ,"lenght",array_quastion.length)
 
       document.getElementById("cloud").innerHTML="";
       const quastion_f=document.createElement("p");
@@ -67,7 +77,9 @@
       eee.append(Q);
       eee.append(quastion_f);
       eee.append(think);
+      eee.append(hint);
       array_quastion.splice(i,1)
+     // hint_list.splice(i,1);
      }
      else 
      {
@@ -163,6 +175,12 @@
   }}
    //////////////////////////////////////////////////
 
+   const func_hint=()=>{
+
+    alert(`Hint :: ${hint_list[i]} `)
+   }
+
+
   const correct_A=()=>
 {
     console.log(option_a);
@@ -176,6 +194,7 @@
         option_b.splice(i,1)
         option_c.splice(i,1)
         option_d.splice(i,1)
+        hint_list.splice(i,1);
 
     }
     else {
@@ -186,6 +205,8 @@
         option_b.splice(i,1)
         option_c.splice(i,1)
         option_d.splice(i,1)
+        hint_list.splice(i,1);
+
     }
    
 }
@@ -205,6 +226,8 @@ const correct_B=()=>
         option_b.splice(i,1)
         option_c.splice(i,1)
         option_d.splice(i,1)
+        hint_list.splice(i,1);
+
 
     }
     else {
@@ -216,6 +239,8 @@ const correct_B=()=>
         option_b.splice(i,1)
         option_c.splice(i,1)
         option_d.splice(i,1)
+        hint_list.splice(i,1);
+
     }
 }  
 //////////////////////////////////////////////////
@@ -233,6 +258,8 @@ const correct_C=()=>
       option_b.splice(i,1)
       option_c.splice(i,1)
       option_d.splice(i,1)
+      hint_list.splice(i,1);
+
     }
     else {
         console.log("lost");
@@ -242,6 +269,8 @@ const correct_C=()=>
         option_b.splice(i,1)
         option_c.splice(i,1)
         option_d.splice(i,1)
+        hint_list.splice(i,1);
+
     }
 }
  //////////////////////////////////////////////////
@@ -257,6 +286,8 @@ const correct_D=()=>
         option_b.splice(i,1)
         option_c.splice(i,1)
         option_d.splice(i,1)
+        hint_list.splice(i,1);
+
     }
     else {
         console.log("lost");
@@ -266,6 +297,8 @@ const correct_D=()=>
         option_b.splice(i,1)
         option_c.splice(i,1)
         option_d.splice(i,1)
+        hint_list.splice(i,1);
+
     }
 }
     //////////////////////////////////////////////////
@@ -297,7 +330,8 @@ const correct_D=()=>
     //////////////////////////////////////////////////
 
     //////////////////////////////////////////////////////
-      
+
+    
        document.getElementById("cloud_1").addEventListener("click" , function(){
         return func_quadtion();})
       
@@ -362,3 +396,8 @@ const correct_D=()=>
    
         document.getElementById("cloud_4").addEventListener("click" ,function(){
         return option_D();})
+
+
+
+        document.getElementById("hint").addEventListener("click" , function(){
+            return func_hint();})
