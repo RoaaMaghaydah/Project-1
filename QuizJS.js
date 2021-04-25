@@ -33,7 +33,7 @@
   //////////////////////////////////////////////
     
       const Q=document.createElement("p");
-      Q.innerHTML="Choose the correct ansswer";
+      Q.innerHTML="#Choose the correct ansswer ...";
       Q.id="Q";
       eee.append(Q);
       
@@ -107,7 +107,7 @@
 
         if(score>=arr_len/2)
         {
-         page.innerHTML="      Your Score :"+score;
+         page.innerHTML=`      Your Score : ${score} /10`;
          page.style.textShadow="yellow 2px 2px";
          body1.style.background="black";
          img.src="https://image.freepik.com/free-vector/you-win-neon-text-sign_118419-1005.jpg";
@@ -119,7 +119,7 @@
          alert(myScore)*/
         }
         else{
-         page.innerHTML="      Your Score :"+score;
+            page.innerHTML=`      Your Score : ${score} /10`;
          page.style.textShadow="yellow 2px 2px";
          body1.style.background="black";
          img.src="https://www.pngkey.com/png/full/239-2391210_game-over-game-over-pixel-transparent.png";
@@ -198,7 +198,7 @@
         console.log("wiiin");
         score++;
         console.log("wiiin","score="+score);      
-        alert("correct answer")
+        alert(`correct answer ${score}/10`)
         correct_answer.splice(i,1)
         option_a.splice(i,1)
         option_b.splice(i,1)
@@ -209,7 +209,7 @@
     }
     else {
         console.log("lost");
-        alert(`wrong answer`);
+        alert(`wrong answer ${score}/10`)
         correct_answer.splice(i,1)
         option_a.splice(i,1)
         option_b.splice(i,1)
@@ -226,10 +226,10 @@ const correct_B=()=>
 {
     console.log(option_b);
     if(option_b[i]===correct_answer[i]){
-        console.log("wiiin");
+        
         score++;
-        console.log("wiiin","score="+score);
-        alert("correct answer");
+       
+        alert(`correct answer ${score}/10`)
 
         correct_answer.splice(i,1)
         option_a.splice(i,1)
@@ -242,7 +242,7 @@ const correct_B=()=>
     }
     else {
         console.log("lost");
-        alert("wrong answer");
+        alert(`wrong answer ${score}/10`)
 
         correct_answer.splice(i,1)
         option_a.splice(i,1)
@@ -260,8 +260,7 @@ const correct_C=()=>
     if(option_c[i]===correct_answer[i]){
         console.log("wiiin");
         score++;
-        console.log("wiiin","score="+score);
-        alert("correct answer");
+        alert(`correct answer ${score}/10`)
 
       correct_answer.splice(i,1)
       option_a.splice(i,1)
@@ -273,7 +272,7 @@ const correct_C=()=>
     }
     else {
         console.log("lost");
-        alert("wrong answer");
+        alert(`wrong answer ${score}/10`)
         correct_answer.splice(i,1)
         option_a.splice(i,1)
         option_b.splice(i,1)
@@ -289,8 +288,7 @@ const correct_D=()=>
        console.log(option_d);
        if(option_d[i]===correct_answer[i]){
         score++;
-        alert("correct answer");
-        console.log("wiiin","score="+score);
+        alert(`correct answer ${score}/10`)
         correct_answer.splice(i,1)
         option_a.splice(i,1)
         option_b.splice(i,1)
@@ -301,7 +299,7 @@ const correct_D=()=>
     }
     else {
         console.log("lost");
-        alert("wrong answer");
+        alert(`wrong answer ${score}/10`)
         correct_answer.splice(i,1)
         option_a.splice(i,1)
         option_b.splice(i,1)
